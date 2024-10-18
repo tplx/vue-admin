@@ -4,6 +4,7 @@ import { HomeOutline } from '@vicons/ionicons5'
 import { NIcon, NLayout, NLayoutContent, NLayoutHeader, NLayoutSider, NMenu, NScrollbar } from 'naive-ui'
 import { h } from 'vue'
 import { RouterView } from 'vue-router'
+import ThemeToggle from '../components/ThemeToggle.vue'
 
 function renderIcon(icon) {
   return () => h(NIcon, null, { default: () => h(icon) })
@@ -51,7 +52,7 @@ const menuOptions = [
           </div>
 
           <div class="h-full flex items-center gap-1 px-xl">
-            right
+            <ThemeToggle />
           </div>
         </div>
       </NLayoutHeader>
